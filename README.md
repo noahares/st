@@ -1,4 +1,6 @@
-# Luke's build of st - the simple (suckless) terminal
+# My build of st - the simple (suckless) terminal
+
+Clone of Luke's build of st, with new-term addition.
 
 The [suckless terminal (st)](https://st.suckless.org/) with some additional features that make it literally the best terminal emulator ever:
 
@@ -29,15 +31,13 @@ The [suckless terminal (st)](https://st.suckless.org/) with some additional feat
 + font2
 + updated to latest version 0.8.2
 
-## Installation for newbs
+## Installation
 
 ```
-git clone https://github.com/LukeSmithxyz/st
+git clone https://github.com/noahares/st
 cd st
 sudo make install
 ```
-
-Users of Arch-based distros can also install it from the AUR as [st-luke-git](https://aur.archlinux.org/packages/st-luke-git/).
 
 Obviously, `make` is required to build. `fontconfig` is required for the default build, since it asks `fontconfig` for your system monospace font.  It might be obvious, but `libX11` and `libXft` are required as well. Chances are, you have all of this installed already.
 
@@ -75,8 +75,3 @@ Note that when you run `wal`, it will negate the transparency of existing window
 If st crashes when viewing emojis, install [libxft-bgra](https://aur.archlinux.org/packages/libxft-bgra/) from the AUR.
 
 Note that some special characters may appear truncated if too wide. You might want to manually set your prefered emoji/special character font to a lower size in the `config.h` file to avoid this. By default, JoyPixels is used at a smaller size than the usual text.
-
-## Contact
-
-- Luke Smith <luke@lukesmith.xyz>
-- [https://lukesmith.xyz](https://lukesmith.xyz)
